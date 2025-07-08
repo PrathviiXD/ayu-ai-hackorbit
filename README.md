@@ -14,7 +14,12 @@ It’s made for real users, especially those who face language or access barrier
 ---
 
 ## 🌐 Live Demo
-Click here to try: [AYU.AI Chatbot Live](https://prathviixd.github.io/ayu-ai-hackorbit/src/index.html)
+
+
+
+Click here to watch  : [AYU.AI App Idea](https://drive.google.com/file/d/1K9nVkCn-OQQQWLb_-v4OvGJwzQBA6t3r/view?usp=drive_link)
+Click here to try     : [AYU.AI Chatbot Live](https://prathviixd.github.io/ayu-ai-hackorbit/src/index.html)
+
 
 ---
 
