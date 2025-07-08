@@ -20,4 +20,4 @@ It provides basic suggestions and support, with a goal to expand into full emoti
 - `app.js` – Bot logic
 
 ## 🌐 Live Demo
-Try the chatbot live: [Click here](https://prathviixd.github.io/ayu-ai-hackorbit/)
+Try the chatbot live: [Click here](https://prathviixd.github.io/ayu-ai-hackorbit/src/index.html)
