@@ -15,10 +15,11 @@ It’s made for real users, especially those who face language or access barrier
 
 ## 🌐 Live Demo
 
+Main Idea Presentation  : [AYU.AI App Idea](https://docs.google.com/presentation/d/1PMBOFdBA1kUJPAO1fDrtLAMn1i2WrkN3xGS9YWLbsLs/edit?usp=drive_link)
 
+Click here to watch  : [AYU.AI App Idea Prototype](https://drive.google.com/file/d/1K9nVkCn-OQQQWLb_-v4OvGJwzQBA6t3r/view?usp=drive_link)
 
-Click here to watch  : [AYU.AI App Idea](https://drive.google.com/file/d/1K9nVkCn-OQQQWLb_-v4OvGJwzQBA6t3r/view?usp=drive_link)
-Click here to try     : [AYU.AI Chatbot Live](https://prathviixd.github.io/ayu-ai-hackorbit/src/index.html)
+Click here to try    : [AYU.AI Chatbot Live](https://prathviixd.github.io/ayu-ai-hackorbit/src/index.html)
 
 
 ---
