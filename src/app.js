@@ -36,3 +36,10 @@ function appendMessage(sender, text) {
   chatlog.innerHTML += `<p><strong>${sender}:</strong> ${text}</p>`;
   chatlog.scrollTop = chatlog.scrollHeight;
 }
+
+const recognition = new webkitSpeechRecognition();
+recognition.onresult = function(event) {
+    const voiceInput = event.results[0][0].transcript;
+    sendMessage(voiceInput);
+};
+recognition.start();
