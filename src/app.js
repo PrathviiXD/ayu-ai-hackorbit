@@ -43,3 +43,16 @@ recognition.onresult = function(event) {
     sendMessage(voiceInput);
 };
 recognition.start();
+
+
+
+function startListening() {
+  const recognition = new webkitSpeechRecognition();
+  recognition.onresult = function(event) {
+    const voiceInput = event.results[0][0].transcript;
+    document.getElementById("userInput").value = voiceInput;
+    sendMessage();
+  };
+  recognition.start();
+}
+
