@@ -18,3 +18,6 @@ It provides basic suggestions and support, with a goal to expand into full emoti
 - `index.html` – Chat layout
 - `style.css` – UI styling
 - `app.js` – Bot logic
+
+## 🌐 Live Demo
+Try the chatbot live: [Click here](https://prathviixd.github.io/ayu-ai-hackorbit/)
