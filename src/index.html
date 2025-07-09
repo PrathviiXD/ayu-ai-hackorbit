@@ -70,3 +70,107 @@
 </body>
 </html>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYU.AI - Your Health Friend</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      margin: 0;
+      background: #f2f9ff;
+      display: flex;
+      justify-content: center;
+    }
+    .app {
+      max-width: 480px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #fff;
+      border-radius: 0;
+    }
+    header {
+      background: #4ca1ff;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      flex-grow: 1;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+    .input-area {
+      display: flex;
+      padding: 0.5rem;
+      gap: 0.5rem;
+      border-top: 1px solid #ccc;
+    }
+    input[type="text"] {
+      flex-grow: 1;
+      padding: 0.5rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      border: none;
+      background: #4ca1ff;
+      color: white;
+      padding: 0.5rem 0.8rem;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .bot, .user {
+      background: #f0f0f0;
+      padding: 0.5rem 1rem;
+      margin: 0.4rem 0;
+      border-radius: 15px;
+      max-width: 80%;
+    }
+    .user {
+      align-self: flex-end;
+      background: #dcf0ff;
+    }
+    .bot {
+      align-self: flex-start;
+    }
+    footer {
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>AYU.AI 💙</h1>
+      <p>Your Digital Health Companion – speak or type freely.</p>
+    </header>
+
+    <main id="chat">
+      <div class="bot">👋 Hi! How are you feeling today?</div>
+    </main>
+
+    <div class="input-area">
+      <button onclick="startVoice()">🎤</button>
+      <input type="text" id="userInput" placeholder="e.g. I feel dizzy and weak...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+
+    <footer>
+      <small>⚠️ This is not medical advice. Please consult a doctor if serious.</small>
+    </footer>
+  </div>
+</body>
+</html>
