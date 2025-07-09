@@ -29,7 +29,7 @@ Prathvi – Solo Developer, Upcoming CSE Student, Learning Python (variables, da
 Hackathon: [HackOrbit 2025] 
 
 
-Theme: (Healthcare Tech)
+Theme: (Healthcare Tech).
 
 ---
 
