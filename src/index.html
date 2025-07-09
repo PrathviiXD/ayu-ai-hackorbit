@@ -1,21 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>AYU.AI – Health Chat Assistant</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYU.AI - Your Health Friend</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function sendMessage() {
+      const input = document.getElementById("userInput");
+      const text = input.value.trim();
+      if (!text) return;
+      const chat = document.getElementById("chat");
+
+      const userDiv = document.createElement("div");
+      userDiv.className = "user";
+      userDiv.textContent = "🧍‍♂️ " + text;
+      chat.appendChild(userDiv);
+
+      const botDiv = document.createElement("div");
+      botDiv.className = "bot";
+      botDiv.textContent = generateResponse(text);
+      chat.appendChild(botDiv);
+
+      input.value = "";
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function startVoice() {
+      if (!('webkitSpeechRecognition' in window)) return alert('Voice not supported');
+      const recognition = new webkitSpeechRecognition();
+      recognition.lang = 'en-IN';
+      recognition.start();
+      recognition.onresult = function (e) {
+        document.getElementById("userInput").value = e.results[0][0].transcript;
+        sendMessage();
+      };
+    }
+
+    function generateResponse(text) {
+      text = text.toLowerCase();
+      if (text.includes("fever")) return "🩺 You might have viral fever. Stay hydrated.";
+      if (text.includes("headache")) return "💊 Try resting and avoid screen time.";
+      if (text.includes("cough") || text.includes("cold")) return "🤧 Looks like a cold. Warm fluids might help.";
+      return "🤖 I'm here to listen. Could you describe more about how you're feeling?";
+    }
+  </script>
 </head>
 <body>
-  <h1>AYU.AI – Your Emotional Health Companion 💙</h1>
-  <div id="chatbox">
-    <div id="chatlog">
-      <p><strong>AYU:</strong> Namaste 🙏! I'm AYU, your health assistant. Tell me how you're feeling today?</p>
+  <div class="app">
+    <header>
+      <h1>AYU.AI 💙</h1>
+      <p>Your Digital Health Companion – speak or type freely.</p>
+    </header>
+
+    <main id="chat">
+      <div class="bot">👋 Hi! How are you feeling today?</div>
+    </main>
+
+    <div class="input-area">
+      <button onclick="startVoice()">🎤</button>
+      <input type="text" id="userInput" placeholder="e.g. I feel dizzy and weak...">
+      <button onclick="sendMessage()">➤</button>
     </div>
-    <input type="text" id="userInput" placeholder="E.g. I have a fever and headache..." />
-    <button onclick="sendMessage()">Send</button>
+
+    <footer>
+      <small>⚠️ This is not medical advice. Please consult a doctor if serious.</small>
+    </footer>
   </div>
-  <script src="app.js"></script>
 </body>
 </html>
 
-<button onclick="startListening()">🎤 Speak</button>
